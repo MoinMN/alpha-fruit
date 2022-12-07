@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+*   {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+/* Navbar: Logo */
+#logo   {
+    margin: 5px 5px;
+}
+
+/* Navbar: Img */
+#logo img    {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 5px 5px;
+    transition: all ease-in 2s;
+}
+
+#logo img:hover{
+    transform: scale(1.2);
+}
+
+#navbar::before  {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul  {
+    display: flex;
+}
+
+#navbar ul li{
+    padding: 12px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: gray;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home::before{
+    content: "";
+    top: 0;
+    position: absolute;
+    background: url('img/background-img-2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 98.8vw;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: rgb(255, 217, 0);
+    text-align: center;
+}
+
+.para{
+    color: burlywood;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+#service{
+    margin: 24px;
+    display: flex;
+}
+
+#service .box{
+    border: 2px solid red;
+    padding: 14px;
+    margin: 70px 15px;
+    border-radius: 20px;
+    background-color:rgba(240, 255, 255, 0.662);
+}
+
+#service .box img{
+    height: 135px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(244, 136, 136, 0.814);
+    transition: all ease-in-out 1s;
+}
+
+#service .box img:hover{
+    transform: scale(1.3);
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/background-img-1.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 180px;    
+}
+
+.client-item{
+    margin: 24px;
+    padding: 14px 20px;
+}
+
+/* contact section */
+#contact{
+    /* position: relative; */
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('img/contact-us.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 107%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 95%;
+    padding: 0.4rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+
+#contact-box textarea{
+    resize: none;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white; 
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    opacity: 0.4;
+}
+
+#foot-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-icon{
+    padding: 10px 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.foot-icon a i{
+    color: gray;
+}
+
+.foot-icon a i:hover{
+    color: blue;
+}
+
+#foot-icon-1 a i:hover{
+    color: red;
+}
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 16px;
+}
+
+.h-secondary{
+    text-align: center; 
+    font-size: 2.2rem;
+    padding: 16px;
+}
+
+.btn{
+    padding: 7px 20px;
+    border: 2px solid white;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin: 18px;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    cursor:pointer;
+    background-color:darkgray;
+    color: white;
+}
+
